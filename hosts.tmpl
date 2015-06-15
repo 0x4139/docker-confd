@@ -1,0 +1,4 @@
+127.0.0.1 localhost
+{{ range gets "/services/*" }}
+{{ .Value }} {{base .Key}}
+{{ end }}
